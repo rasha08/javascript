@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>javascript</title>
+</head>
+<body>
+
+<script type="text/javascript">
+  var foo = 'foo from index.html';
+
+  console.log(foo);
+
+  // 'foo from index.html' ova skripta se izvrsava pre ucitavanja skripte app1.js sto zanaci da app1.js nema nikakvog uticaja
+  // na ovu skriptu
+</script>
+<script src="app1.js">
+  // Ovde se loguje 'foo from anonimus' zato sto se prilikom ucitavalja app1.js izvrsava IIFE iz tog fajla a kako u tom fajlu 
+  // imamo deklarisanje promenljive foo console.log funkcija iz date anomimne funkcije uzima foo iz najblizeg(svog) scope-a.
+  //
+  // Ako anonimna funkcija iz app1.js ne bi imala svoju foo promenjivu ona bi gledala u scope iznad a ukoliko ni scope iznad
+  // anonimne funkcije nema foo promenjivu foo bi bilo uzeto iz prvog script taga jer se nazali sledece po scope-u.
+</script>
+
+<script type="text/javascript">
+  console.log(foo);
+  // 'foo from app1.js' - ovde promenjiva foo iz prvog skripta biva "overwritted" sa promenjivom foo koja se nalazi u app1.js 
+  // ispred anonimne funkcije, kako ta promenjiva nije unutar IFFE-a ona ulazi u global scope fajla.
+</script>
+</body>
+</html>

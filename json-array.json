@@ -1,0 +1,33 @@
+[
+  {
+    "name": "neko ime",
+    "lastName": "neko prezime",
+    "age": 21,
+    "isValid": true,
+    "hobies": [ 
+      "running", 
+      "reading" 
+    ]
+  },
+  {
+    "name": "neko ime 2",
+    "lastName": "neko prezime 2",
+    "age": 16,
+    "isValid": false,
+    "hobies": [ 
+      "movies", 
+      "campping" 
+    ]
+  },
+  {
+    "name": "neko ime 3",
+    "lastName": "neko prezime 4",
+    "age": 34,
+    "isValid": true,
+    "hobies": [ 
+      "long walks", 
+      "running",
+      "arrchery" 
+    ]
+  }
+]

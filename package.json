@@ -1,0 +1,14 @@
+{
+	"name": "javascript",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"devDependencies": {
+		"standard": "*"
+	},
+	"scripts": {
+		"test": "standard && node app.js --fix"
+	},
+	"author": "",
+	"license": "ISC"
+}

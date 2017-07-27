@@ -1,0 +1,32 @@
+{
+  "name": "Ben",
+  "lastName": "Wallace",
+  "position": "center",
+  "carier": {
+    "start": 1995,
+    "end": 2013,
+    "awards":[
+      {
+        "awardName": "ROY",
+        "season": "1995/1996"
+      },
+      {
+        "awardName": "DPOY",
+        "season": "2001/2002"
+      }
+    ],
+    "teams": [
+      {
+        "team": "Detroit Pistons",
+        "from": 1995,
+        "to": 2007
+      },
+      {
+        "team": "Chicago Bulls",
+        "from": 2008,
+        "to": 2013
+      }
+    ],
+    "isRetired": true
+  }
+}
